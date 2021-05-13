@@ -36,7 +36,6 @@ $this->breadcrumbs=array(
 		<?php echo $form->labelEx($model,'password'); ?>
 		<?php echo $form->passwordField($model,'password'); ?>
 		<?php echo $form->error($model,'password', array("class" => "text-error")); ?>
-		
 	</div>
 
 	<div class="row buttons" align="center">

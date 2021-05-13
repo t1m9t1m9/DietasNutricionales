@@ -1,4 +1,4 @@
-<?php 
+<?php
 $this->pageTitle = 'Formulario de Registro';
 $this->breadcrumbs = array('registro');
 ?>
@@ -18,7 +18,7 @@ $this->breadcrumbs = array('registro');
             'clientOptions' => array(
                 'validateOnSubmit' => true,
             ),
-        )); 
+        ));
     ?>
         <!--CEDULA-->
         <div class="row" align="center">
