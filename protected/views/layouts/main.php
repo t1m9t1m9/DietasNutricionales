@@ -147,7 +147,25 @@ foreach($idusu as $idusuced)
                             array('label' => 'Reporte de Usuarios', 'url' => array('/site/reporteusuarios')),
                             //array('label' => 'Medidas', 'url' => array('/site/medidas')),
                         ),
-                    ),array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+                    ),
+
+                    array('label'=>'Panel de Control', 'visible'=>!Yii::app()->user->isGuest,
+                        'items' => array(
+                            array('label' => 'Cambiar Password', 'url' => array('/usuario/configuracion')),
+                            // array('label' => 'Dieta', 'url' => array('/site/dieta')),
+                            // array('label' => 'Medidas', 'url' => array('/site/medidas')),
+                        ),
+                    ),
+                   // array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+                   //TODO: Poner el nombre junto al Login
+                    array('label'=>'Logout ('.$nom[$posision].')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+                ),
+
+                'htmlOptions' => array('class' => 'nav navbar-nav'),
+            ));
+        }?>
+				</div>
+			</div>
 		</div>
 	</div><!-- mainmenu -->
 
